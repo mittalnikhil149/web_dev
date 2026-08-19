@@ -1,7 +1,7 @@
-import react, { useState } from "react";
-import React  from 'react'
+// import react, { useState } from "react";
+// import React  from 'react'
 
-export default function App() {
+/*export default function App() {
   /*const App =()=>{
     function clickMe(){
       alert("click Me")
@@ -46,7 +46,7 @@ return(
 </div>
 );
   
-  };*/
+  };
 
   const name = () => {
   const [Name, setName] = useState(Kiet);
@@ -60,4 +60,38 @@ return(
       <button onClick={(changeName)=>(alert("nikhil"))}>change Name</button>
     )
   }
+}*/
+// import React , {useState} from 'react'
+
+// const App = () => {
+//   const [numbers,set]
+//   return (
+//     <div>App</div>
+//   )
+// }
+import React, { useState } from 'react'
+
+const App = () => {
+  const [numbers, setNumbers] = useState([1, 2, 3, 4, 5])
+
+  const plusTwo = () => {
+    const updatedNumbers = numbers.map((num) => num + 2)
+    setNumbers(updatedNumbers)
+  }
+
+  return (
+    <div>
+      <h2>List of numbers:</h2>
+
+      {
+        numbers.map((num, index) => (
+          <h2 key={index}>{num}</h2>
+        ))
+      }
+
+      <button onClick={plusTwo}>Plus +2</button>
+    </div>
+  )
 }
+
+export default App
