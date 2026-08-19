@@ -1,7 +1,8 @@
-import React from 'react'
+import react, { useState } from "react";
+import React  from 'react'
 
 export default function App() {
-  const App =()=>{
+  /*const App =()=>{
     function clickMe(){
       alert("click Me")
     }
@@ -38,12 +39,25 @@ export default function App() {
     }</h3>
  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b> Voluptatem minima explicabo iusto possimus aliquid, praesentium mollitia! Ducimus magni soluta deleniti eaque quo </b> . Quisquam, doloremque necessitatibus optio velit voluptate commodi obcaecati architecto minima minus autem vel nihil incidunt? Alias vitae nostrum blanditiis. Veritatis vel laborum minus velit nostrum maiores temporibus a?</p>
 </> 
- )*/
+ )
 return(
   <div>
 <button onClick={()=>{alert("click me alert")}}>click me</button>
 </div>
 );
   
-  };
+  };*/
+
+  const name = () => {
+  const [Name, setName] = useState(Kiet);
+
+    function changeName(newName){
+      setName("KIET MCA");
+      console.log(name)
+    }
+    return(
+   
+      <button onClick={(changeName)=>(alert("nikhil"))}>change Name</button>
+    )
+  }
 }
