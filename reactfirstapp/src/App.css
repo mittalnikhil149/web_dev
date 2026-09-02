@@ -1,4 +1,33 @@
-.counter {
+.table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table th,
+.table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.table thead {
+  background-color: yellow;
+  color: black;
+}
+
+.table tbody {
+  background-color: lightcyan;
+  color: rgb(7, 255, 172);
+}
+
+.table tbody tr:hover {
+  background-color: white;
+  color: rgb(7, 255, 172);
+}
+
+/* .counter {
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -181,4 +210,4 @@
     right: 0;
     border-right-color: var(--border);
   }
-}
+} */

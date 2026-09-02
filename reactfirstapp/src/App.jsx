@@ -1,97 +1,23 @@
-// import react, { useState } from "react";
-// import React  from 'react'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-/*export default function App() {
-  /*const App =()=>{
-    function clickMe(){
-      alert("click Me")
-    }
-  
-  /*return (
-    <div>
-      <h1>Welcome to React js</h1>
-    </div>
-  )  */
- /*let name="kiet MCA"
- let listOfName={
-  name:"KIET",
-  id:2,
-  class:"MCA Sec c"
- }
- let lang=["java","html","python","Reactjs"]
- return (
-
-  <> <h1> welcome to react js</h1>
- <h2>my name is nikhil {name} </h2>
- <h3>name: {listOfName.name}</h3>
- <h3>id: {listOfName.id}</h3>
- <h3>class: {listOfName.class}</h3>
- <h3>language</h3>
- /* <h3>lang: {lang[1]}</h3>
- 
- <h3>{lang.map(value=>(
-  <h3>{value}</h3> 
-  ))}</h3> 
-  <h3>{
-    lang.map((value,index) =>(
-      <li>{index}.{value}</li>
-    ))
-    }</h3>
- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b> Voluptatem minima explicabo iusto possimus aliquid, praesentium mollitia! Ducimus magni soluta deleniti eaque quo </b> . Quisquam, doloremque necessitatibus optio velit voluptate commodi obcaecati architecto minima minus autem vel nihil incidunt? Alias vitae nostrum blanditiis. Veritatis vel laborum minus velit nostrum maiores temporibus a?</p>
-</> 
- )
-return(
-  <div>
-<button onClick={()=>{alert("click me alert")}}>click me</button>
-</div>
-);
-  
-  };
-
-  const name = () => {
-  const [Name, setName] = useState(Kiet);
-
-    function changeName(newName){
-      setName("KIET MCA");
-      console.log(name)
-    }
-    return(
-   
-      <button onClick={(changeName)=>(alert("nikhil"))}>change Name</button>
-    )
-  }
-}*/
-// import React , {useState} from 'react'
-
-// const App = () => {
-//   const [numbers,set]
-//   return (
-//     <div>App</div>
-//   )
-// }
-import React, { useState } from 'react'
+import Header from "./components/headers/header";
+import Registration3 from "./components/Registration3";
+import Body from "./components/Body/body";
+import Counter from "./components/counter";
 
 const App = () => {
-  const [numbers, setNumbers] = useState([1, 2, 3, 4, 5])
-
-  const plusTwo = () => {
-    const updatedNumbers = numbers.map((num) => num + 2)
-    setNumbers(updatedNumbers)
-  }
-
   return (
-    <div>
-      <h2>List of numbers:</h2>
+    <div className="container">
+      <Header />
 
-      {
-        numbers.map((num, index) => (
-          <h2 key={index}>{num}</h2>
-        ))
-      }
-
-      <button onClick={plusTwo}>Plus +2</button>
+      <Routes>
+        <Route path="/" element={<Registration3 />} />
+        <Route path="/student" element={<Body />} />
+        <Route path="/counter" element={<Counter />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

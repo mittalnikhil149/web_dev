@@ -5,11 +5,11 @@
   --border: #080311;
   --code-bg: #b8ab5b;
   --accent: #d5bee7;
-  --accent-bg: rgba(134, 86, 170, 0.651);
+  --accent-bg: rgba(250, 244, 255, 0.651);
   --accent-border: rgba(205, 198, 211, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
-    rgba(245, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgb(252, 246, 246) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -35,11 +35,11 @@
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
-    --border: #2e303a;
+    --border: #e1e5fc;
     --code-bg: #1f2028;
-    --accent: #c084fc;
+    --accent: #d1bff5;
     --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
+    --accent-border: rgba(227, 219, 235, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
