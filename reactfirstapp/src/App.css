@@ -27,6 +27,16 @@
   color: rgb(7, 255, 172);
 }
 
+.product-page {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 32rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
 /* .counter {
   font-size: 16px;
   padding: 5px 10px;
